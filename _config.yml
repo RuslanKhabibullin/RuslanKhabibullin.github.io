@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: tail -f RuslanKhabibullin.log
+title: tail -f ruslankhabibullin.log
 email: khabibullin.ruslan.95@gmail.com
-description: personal blog
+description: ruslankhabibullin personal blog
 baseurl: ""
-url: https://RuslanKhabibullin.github.io
+url: https://ruslankhabibullin.github.io
 github_username: RuslanKhabibullin
 
 # Build settings

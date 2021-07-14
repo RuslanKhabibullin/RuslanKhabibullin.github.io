@@ -1,0 +1,124 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Header
+
+.site-header {
+  border-top: none;
+}
+
+// Wrapper
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    max-width: calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 960px;
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 1152px;
+    width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1472px) {
+  .wrapper {
+    max-width: 1344px;
+    width: 1344px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &::after {
+    display: none;
+  }
+}
+
+// Posts
+
+@media screen and (max-width: 500px) {
+  .post-list {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .post-element-wrapper {
+      padding: 15px 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .post-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .post-element-wrapper {
+      padding: 0 15px 15px 0;
+      width: 33.3%;
+
+      &:nth-child(3n) {
+        padding: 0 0 15px 0;
+      }
+    }
+  }
+}
+
+.post-list {
+  display: flex;
+
+  .post-element-wrapper {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .post-element {
+    padding: 10px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+    border-radius: 5px;
+  }
+}
+
+// Footer
+
+@media screen and (max-width: 500px) {
+  .footer-col-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .footer-col-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-col-description {
+    text-align: right;
+  }
+}
+
+.footer-col-wrapper {
+  display: flex;
+
+  &::after {
+    display: none;
+  }
+}
