@@ -95,6 +95,36 @@
   }
 }
 
+// Pagination
+
+@media screen and (max-width: 500px) {
+  .pagination {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .pagination {
+    justify-content: flex-end;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+
+  .button {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  .previous {
+    margin: 0 10px 0 0;
+  }
+}
+
+
 // Footer
 
 @media screen and (max-width: 500px) {
