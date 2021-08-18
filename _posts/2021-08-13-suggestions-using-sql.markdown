@@ -13,7 +13,7 @@ categories: postgres
 
 ER-схема:
 
-![Отношения между пользователями, темами и статьями](https://monosnap.com/image/C2tnulWsXjIsDSdVJhuinQAiwcDuWt)
+![Отношения между пользователями, темами и статьями](/assets/images/2021-08-13_1.png)
 
 P.S.: не обращайте внимания на VARCHAR(45), это нестабильная работа MySQL Workbench в моей системе. Представьте что это STRING или TEXT.
 
